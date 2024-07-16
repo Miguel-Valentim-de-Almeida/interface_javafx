@@ -11,7 +11,12 @@ public class TelaController {
     @FXML
     private TextField campoAbastecer;
     
-    private MaquinaCoxinha maquinaCoxinha = new MaquinaCoxinha();
+    private MaquinaCoxinha maquinaCoxinha;
+    
+    @FXML
+    private void initialize () {
+        maquinaCoxinha  = new MaquinaCoxinha();
+    }
     
     @FXML
     private void esvaziar () {
